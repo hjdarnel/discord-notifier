@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "discord-notify",
+    "builds": [
+        { "src": "*.js", "use": "@now/node" }
+    ],
+    "github": {
+        "silent": true
+    },
+    "env": {
+        "TOKEN": "@discord-bot-token",
+        "USER": "@discord-user"
+    }
+}

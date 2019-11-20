@@ -1,0 +1,17 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "notify.js",
+  "scripts": {
+    "dev": "now dev"
+  },
+  "keywords": [],
+  "author": "Henry Darnell",
+  "license": "UNLICENSE",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "micro": "^9.3.4",
+    "urlencoded-body-parser": "^3.0.0"
+  }
+}

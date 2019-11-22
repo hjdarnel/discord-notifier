@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
             console.log(`User is ${user.presence.status}`);
         }
 
-        res.writeHead(200, { 'Content-Type': 'application/json' }).end('sent');
+        res.writeHead(200, { 'Content-Type': 'application/json' }).end();
     });
 
     client.login(TOKEN);

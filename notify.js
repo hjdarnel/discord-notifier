@@ -5,7 +5,8 @@ module.exports = async (req, res) => {
     const {text} = await json(req);
 
     if (!text) {
-        res.writeHead(400, {'Content-Type': 'application/json' }).end();
+        res.writeHead(400, {'Content-Type': 'application/json' });
+        res.end();
         return;
     }
 
@@ -22,7 +23,8 @@ module.exports = async (req, res) => {
             console.log(`User is ${user.presence.status}`);
         }
 
-        res.writeHead(200, { 'Content-Type': 'application/json' }).end();
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end();
     });
 
     client.login(TOKEN);

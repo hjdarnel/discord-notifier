@@ -16,11 +16,11 @@ module.exports = async (req, res) => {
 
     client.on('ready', async () => {
         const user = client.users.get(USER);
-        
+
         if (user && user.presence.status === "online") {
             await user.send(text);
         } else {
-            console.log(`User is ${user}`);
+            console.log(user);
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });

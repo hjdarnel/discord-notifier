@@ -2,7 +2,7 @@ const { json } = require('micro')
 const Discord = require('discord.js');
 
 module.exports = async (req, res) => {
-    const {text} = await json(req);
+    const {text} = req.body;
 
     if (!text) {
         res.writeHead(400, {'Content-Type': 'application/json' });

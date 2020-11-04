@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
         if (user && user.presence.status === "online") {
             await user.send(text);
         } else {
-            console.log(`User is ${user.presence.status}`);
+            console.log(`User is ${user}`);
         }
 
         res.writeHead(200, { 'Content-Type': 'application/json' });

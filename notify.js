@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
 
     client.on('ready', async () => {
         const user = client.users.get(USER);
-
-        if (user.presence.status === "online") {
+        
+        if (user && user.presence.status === "online") {
             await user.send(text);
         } else {
             console.log(`User is ${user.presence.status}`);

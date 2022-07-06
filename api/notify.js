@@ -10,7 +10,6 @@ module.exports = async (req, res) => {
 
   const { text } = req.body;
   const secret = req.headers["x-secret"];
-  console.log;
 
   if (!secret || secret != process.env.SECRET) {
     res
